@@ -1,7 +1,7 @@
 Git cmds used in tutorial:
 
 git init (initialize local repo)
-git remote add origin "link(get it from github account)"
+git remote add origin "url(get it from github account)"
 clear (can be used to clear the screen)
 git status (gives you the status of untracked(yet to be added/committed) files)
 git add <filename> (to add single file to the index)
