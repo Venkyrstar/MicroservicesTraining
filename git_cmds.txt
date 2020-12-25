@@ -1,4 +1,4 @@
-Git cmds :
+Git cmds used in tutorial:
 
 git init (initialize local repo)
 git remote add origin "link(get it from github account)"
