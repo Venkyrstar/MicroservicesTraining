@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+
+	<bean id="add" class="com.ofss.Address">
+		<constructor-arg name="flatNo" value="111"></constructor-arg>
+		<constructor-arg name="streeName" value="Main Road"></constructor-arg>
+		<constructor-arg name="city" value="Pune"></constructor-arg>
+	</bean>
+	
+	<bean id="proj" class="com.ofss.Project">
+		<property name="projectId" value="15"></property>
+		<property name="projectName" value="Flexcube Implementation"></property>
+		<property name="projectBudget" value="1234567.23"> </property>
+	</bean>
+	
+	<bean id="cust" class="com.ofss.Customer" init-method="m1" destroy-method="m2">
+		<property name="custId" value="7"></property>
+		<property name="custName" value="James Bond"></property>
+		<property name="add" ref="add"></property>
+		<property name="proj" ref="proj"></property>
+		<property name="products">
+			<list>
+				<value>Laptop</value>
+				<value>Jeans</value>
+				<value>Mobile</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

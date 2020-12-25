@@ -1,0 +1,23 @@
+Git cmds :
+
+git init (initialize local repo)
+git remote add origin "link(get it from github account)"
+clear (can be used to clear the screen)
+git status (gives you the status of untracked(yet to be added/committed) files)
+git add <filename> (to add single file to the index)
+git add -A (to add multiple files at once to the index)
+git commit -m "<Message related to your changes>" (commit cmd for one file)
+git commit -a -m "<Message related to your changes>" (commit cmd for multiple files. -a also adds modified files to index)
+git log (to see all commit related messages)
+git branch <branch name> (to create a new branch)
+git checkout <branch name> (switch to that particluar branch)
+ls (to list the files in that branch)
+git merge <branch name> (to merge your branch with the master branch. Checkout to master before executing this cmd)
+git rebase <branch name> (it merges the current branch with the branch name give in cmd. Difference b/w merge and rebase is that 
+						  it attaches all commits done in the other branch to your current branch)
+ssh-keygen (to generate SSH key)
+Add this SSH key in your github account(Settings -> SSH and GPG keys -> New SSH key)
+ssh -T git@github.com
+git push origin <branch name> (to create a new branch(if the branch is not master) in central repo and 
+							   push your changes from current branch to that new branch)
+git checkout <commit hash(first 8 digits)> <filename> (to revert your changes back to that commit version)

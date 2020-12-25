@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:annotation-config></context:annotation-config>
+	
+	<bean id="stock" class="com.ofss.Stock">
+		<property name="stockId" value="20"></property>
+		<property name="stockName" value="ORCL"></property>
+		<property name="stockPrice" value="123.45"></property>
+	</bean>
+	
+	<bean id="stock1" class="com.ofss.Stock">
+		<property name="stockId" value="30"></property>
+		<property name="stockName" value="IBM"></property>
+		<property name="stockPrice" value="23.23"></property>
+	</bean>
+	
+	<bean id="cust1" class="com.ofss.Customers">
+		<property name="custId" value="10"></property>
+		<property name="custName" value="Venkatesh"></property>
+	</bean>
+
+</beans>
